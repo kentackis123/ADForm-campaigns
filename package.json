@@ -1,0 +1,48 @@
+{
+    "name": "ADForm-campaigns",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --open --mode development",
+        "build": "webpack --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kentackis123/ADForm-campaigns.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kentackis123/ADForm-campaigns/issues"
+    },
+    "homepage": "https://github.com/kentackis123/ADForm-campaigns#readme",
+    "devDependencies": {
+        "@babel/core": "^7.8.6",
+        "@babel/preset-env": "^7.8.6",
+        "@babel/preset-react": "^7.8.3",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.0.6",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.18.3",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "prettier": "^1.19.1",
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.8.7",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-redux": "^7.2.0",
+        "redux": "^4.0.5"
+    }
+}
