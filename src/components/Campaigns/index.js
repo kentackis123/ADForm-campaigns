@@ -18,8 +18,8 @@ const Campaigns = () => {
                 status:
                     formatDate(i.startDate) > formatDate(i.endDate)
                         ? 'Invalid'
-                        : formatDate(i.startDate) < new Date() &&
-                          formatDate(i.endDate) > new Date()
+                        : formatDate(i.startDate) < moment().format() &&
+                          formatDate(i.endDate) > moment().format()
                         ? 'Active'
                         : 'Inactive'
             }))
@@ -56,7 +56,7 @@ const Campaigns = () => {
     };
 
     return (
-        <Table sorter={sorter}>
+        <Table sorter={sorter} length={campaignsState.length}>
             <p id="id" onClick={SortByCol}>
                 ID
             </p>
