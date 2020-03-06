@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.loading {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}

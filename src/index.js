@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import './index.css';
 import store from './redux/store';
-import App from './App';
+
+const App = lazy(() => import('./App'));
+const Loading = () => <p className="loading">Loading...</p>;
 
 const wrapper = document.getElementById('container');
-wrapper
-    ? ReactDOM.render(
-          <Provider store={store}>
-              <App />
-          </Provider>,
-          wrapper
-      )
-    : false;
+ReactDOM.render(
+    <Provider store={store}>
+        <Suspense fallback={<Loading />}>
+            <App />
+        </Suspense>
+    </Provider>,
+    wrapper
+);
